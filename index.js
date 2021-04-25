@@ -4,19 +4,25 @@ const fi = (function() {
       return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
     },
 
-    each: function() {
+    each: function(collection, callback) {
+      const each = collection.forEach(x => {
+        return alert('Im here')
+      });
+      // const length = collection.length
+      console.log(each)
+      //alert('Stop the presses')
+      // return length 
+    },
+
+    map: function(collection, callback) {
 
     },
 
-    map: function() {
+    reduce: function(collection, callback, acc) {
 
     },
 
-    reduce: function() {
-
-    },
-
-    functions: function() {
+    functions: function(collection, callback) {
 
     },
 
